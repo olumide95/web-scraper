@@ -21,7 +21,7 @@ class ScraperController extends Controller
      *
      * @return JsonResponse
      */
-    public function index(Request $request) 
+    public function index(Request $request) : JsonResponse
     {
         $validator = Validator::make($request->all(), [
             'url' => 'required',

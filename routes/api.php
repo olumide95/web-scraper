@@ -21,6 +21,6 @@ Route::get('/', function () use ($router) {
    return response()->json(['status_code' => 200,'message'=>'Web Scraper API Service Reached.'], 200);
 });
 
-Route::get('/scrap', 'ScraperController@index');
+Route::get('/scrape', 'ScraperController@index');
 
 

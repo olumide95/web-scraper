@@ -19,7 +19,7 @@ class CreateCompanyIndustriesTable extends Migration
             $table->string('section');
             $table->string('division');
             $table->string('main_group');
-            $table->integer('main_class');
+            $table->string('main_class');
             $table->timestamps();
         });
     }

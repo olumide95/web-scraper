@@ -18,7 +18,7 @@ class CreateCompanyInformationsTable extends Migration
             $table->string('cin');
             $table->string('name');
             $table->string('status');
-            $table->string('age');
+            $table->string('date_of_incorporation');
             $table->integer('reg_number');
             $table->string('category');
             $table->string('subcategory');
@@ -28,8 +28,8 @@ class CreateCompanyInformationsTable extends Migration
             $table->string('email')->nullable();
             $table->string('registered_office');
             $table->string('listed');
-            $table->date('last_agm_date')->nullable();
-            $table->date('balance_sheet_date')->nullable();
+            $table->string('last_agm_date')->nullable();
+            $table->string('balance_sheet_date')->nullable();
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@ class CreateCompanyDirectorsTable extends Migration
             $table->string('din');
             $table->string('name');
             $table->string('designation');
-            $table->date('date_of_appointment');
+            $table->string('date_of_appointment');
             $table->timestamps();
         });
     }
